@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css"> <!-- 1 -->
     <title>APIs</title>
 </head>
 <body>
-    <p class="name"></p>
-    <p class="blog"></p>
+    <p id="name">1</p> <!-- 4  -->
+    <p id="blog">2</p> <!-- 4 -->
+    <p id="location">3</p> <!-- 3, 4 --> 
 
-  <script src="../assets/js/app.js"></script>
+  <script src="./assets/js/app.js"></script> <!-- 2 -->
 </body>
 </html>
+
+<!-- 
+
+  1. Se homogeneizo el estilo de la ruta para acceder a la hoja de estilos (se agrega ./)
+  2. La ruta hacia el script era incorrecta, se corrigio a ./Ruta
+  3. Se agrega una nueva etiqueta p con el id location
+  4. Se cambio el nombre class por un id.
+-->
